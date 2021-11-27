@@ -49,6 +49,12 @@ body{
         text-decoration-color: red;
         text-decoration-style: double;
       } 
+
+.whatwedo{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px;
+  }
   
   .myintro{
   background-color: black;
