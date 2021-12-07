@@ -1,0 +1,182 @@
+/*
+
+body{
+    background-image: url("images/gxbodybgimagelights.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    }  */
+    
+    body{
+        color: white;
+      }
+  
+      
+      #hdrid{
+        text-align: center;
+        margin-top: 10px;
+        width: 50%;
+        color:white;
+        border: 1px solid red;
+      }
+  
+      .navdiv{
+        text-align: center;
+      } 
+  
+      #aboutusid{
+        margin-right: 10px;
+      }
+  
+      .hdrimages{
+        margin-top: 50px;
+      }
+  
+      #homepagecaptionid{
+        text-align: center;
+        margin-bottom: 150px;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-style: double;
+      } 
+  
+      .rotatinglaptopgraphic{
+        text-align: center;
+      }
+  
+      #whatwedoid{
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-style: double;
+      } 
+
+      .whatwedo{
+        background: black;
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 20px;
+      }
+  
+  .myintro{
+  background-color: black;
+  border: blue;
+  padding: 10px;
+  border-radius: 20px;
+  
+  }
+
+
+  
+  
+  
+  /*=====ANIMATION MODULES BELOW=====*/
+  
+  /*This module creates flow effect on the page header*/
+  #hdrid{
+    animation: textglow 1s infinite alternate;
+  }
+  
+  @keyframes textglow {
+    from {
+      box-shadow: 0 0 10px -10px #cf1b0d;
+    }
+    to {
+      box-shadow: 0 0 10px 10px #f4aee5;
+    }
+  }
+  
+  /*Element to be animated - Main page header with the id value = "primaryhdr"*/
+  #primaryhdr{
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+  }
+  
+  
+  /* Flickering animation - NOTE: THIS ANIMATION WORKS */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  
+  /* The code below executes the 3D spinner defined in the html paragraph*/
+  .rotatinglaptopgraphic{
+      animation-name: rotatinglaptopgraphic;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      transform-style: preserve-3d;
+    }
+    
+    /* WebKit and Opera browsers */
+    @-webkit-keyframes rotatinglaptopgraphic {
+      from { -webkit-transform: rotateY(0deg);
+      }
+      to   { -webkit-transform: rotateY(-360deg); }
+    }
+    
+    /* all other browsers */
+    @keyframes rotatinglaptopgraphic {
+      from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+      to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+      }
+    }
+  
+  
+    
+  /* CODES TO MAKE WEB PAGE RESPONSIVE - TO FIT ALL  SCREEN SIZES*/
+  /*=============================================================*/
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
